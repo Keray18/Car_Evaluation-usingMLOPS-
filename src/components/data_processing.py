@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
@@ -35,7 +35,7 @@ class DataProcessing:
                 "safety"
             ]
             pipeline = Pipeline(steps=[
-                ("one_hot_encoder", OneHotEncoder()),
+                ("oedinal_encoder", OrdinalEncoder()),
                 ("scaler", StandardScaler(with_mean=False))
             ])
 
@@ -48,7 +48,7 @@ class DataProcessing:
             return preprocessor
 
         except Exception as e:
-            raise CustomException(sys, e)
+            raise CustomException(e, sys)
 
     def initiate_data_processing(self, train_path, test_path):
         try:
@@ -72,7 +72,7 @@ class DataProcessing:
             input_feature_test_arr = preprocessing_obj.transform(
                 input_feature_test_df)
 
-            target_encoder = OneHotEncoder()
+            target_encoder = OrdinalEncoder()
             target_feature_train_arr = target_encoder.fit_transform(
                 target_feature_train_df.values.reshape(-1, 1))
             target_feature_test_arr = target_encoder.transform(
@@ -97,4 +97,4 @@ class DataProcessing:
             )
 
         except Exception as e:
-            raise CustomException(sys, e)
+            raise CustomException(e, sys)

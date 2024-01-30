@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Car_Evaluation%28mlops%29/carevaluationmlops/mlruns/0/3005f7dec2b142f99368270ab0cbf1bf/artifacts
+end_time: 1706619990800
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3005f7dec2b142f99368270ab0cbf1bf
+run_name: unleashed-koi-955
+run_uuid: 3005f7dec2b142f99368270ab0cbf1bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706619990753
+status: 4
+tags: []
+user_id: admin

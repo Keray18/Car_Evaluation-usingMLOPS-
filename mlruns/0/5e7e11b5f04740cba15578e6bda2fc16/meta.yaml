@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Car_Evaluation%28mlops%29/carevaluationmlops/mlruns/0/5e7e11b5f04740cba15578e6bda2fc16/artifacts
+end_time: 1706619955767
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5e7e11b5f04740cba15578e6bda2fc16
+run_name: charming-crow-696
+run_uuid: 5e7e11b5f04740cba15578e6bda2fc16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706619955717
+status: 4
+tags: []
+user_id: admin

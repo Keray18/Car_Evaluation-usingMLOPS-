@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Car_Evaluation%28mlops%29/carevaluationmlops/mlruns/0/9b29a2618d804a1aa18b165e4cc54128/artifacts
+end_time: 1706619766754
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9b29a2618d804a1aa18b165e4cc54128
+run_name: luminous-bass-932
+run_uuid: 9b29a2618d804a1aa18b165e4cc54128
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706619766708
+status: 4
+tags: []
+user_id: admin
