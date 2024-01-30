@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Car_Evaluation%28mlops%29/carevaluationmlops/mlruns/0/7fa8de0342e248a58085887b7191ff30/artifacts
+end_time: 1706633882045
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7fa8de0342e248a58085887b7191ff30
+run_name: honorable-ant-216
+run_uuid: 7fa8de0342e248a58085887b7191ff30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706633879085
+status: 3
+tags: []
+user_id: admin

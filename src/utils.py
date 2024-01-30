@@ -45,39 +45,18 @@ def eval_model(x_train, y_train, x_test, y_test, models):
 
                 train_model_score = accuracy_score(y_train, y_train_pred)
                 test_model_score = accuracy_score(y_test, y_test_pred)
-                train_precision = precision_score(
-                    y_train, y_train_pred, average='weighted')
-                test_precision = precision_score(
-                    y_test, y_test_pred, average='weighted')
 
-                train_recall = recall_score(
-                    y_train, y_train_pred, average='weighted')
-                test_recall = recall_score(
-                    y_test, y_test_pred, average='weighted')
-
-                train_f1 = f1_score(y_train, y_train_pred, average='weighted')
-                test_f1 = f1_score(y_test, y_test_pred, average='weighted')
-
-                report[model_name]['accuracy'].append(
-                    {'train': train_accuracy, 'test': test_accuracy})
-                report[model_name]['precision'].append(
-                    {'train': train_precision, 'test': test_precision})
-                report[model_name]['recall'].append(
-                    {'train': train_recall, 'test': test_recall})
-                report[model_name]['f1'].append(
-                    {'train': train_f1, 'test': test_f1})
+                report[model_name].append(test_model_score)
 
                 # Log the models
                 mlflow.sklearn.log_model(model, f"{model_name}_model")
 
                 # Log the params and metrics
                 # mlflow.log_params(gs.best_params_)
-                mlflow.log_metrics({
-                    "train_accuracy": train_accuracy, "test_accuracy": test_accuracy,
-                    "train_precision": train_precision, "test_precision": test_precision,
-                    "train_recall": train_recall, "test_recall": test_recall,
-                    "train_f1": train_f1, "test_f1": test_f1
-                })
+                mlflow.log_metrics(
+                    {"train_model_score": train_model_score, "test_model_score": test_model_score})
+
+        return report
 
         return report
 

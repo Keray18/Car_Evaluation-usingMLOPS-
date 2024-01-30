@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Car_Evaluation%28mlops%29/carevaluationmlops/mlruns/0/938b967ba5124be1ac83b22935b1d01b/artifacts
+end_time: 1706633888547
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 938b967ba5124be1ac83b22935b1d01b
+run_name: dapper-lamb-383
+run_uuid: 938b967ba5124be1ac83b22935b1d01b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706633885412
+status: 3
+tags: []
+user_id: admin

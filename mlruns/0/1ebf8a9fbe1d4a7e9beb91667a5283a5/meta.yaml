@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Car_Evaluation%28mlops%29/carevaluationmlops/mlruns/0/1ebf8a9fbe1d4a7e9beb91667a5283a5/artifacts
+end_time: 1706633879063
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ebf8a9fbe1d4a7e9beb91667a5283a5
+run_name: auspicious-moth-625
+run_uuid: 1ebf8a9fbe1d4a7e9beb91667a5283a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706633874266
+status: 3
+tags: []
+user_id: admin
